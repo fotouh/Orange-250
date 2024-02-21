@@ -1,11 +1,11 @@
-body {
+/* body {
   background-color: #e07924;
   animation-name: bg;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   text-align: center;
 }
-@keyframes bga {
+@keyframes bg {
   0% {
     background: #f16e00;
   }
@@ -15,15 +15,34 @@ body {
   100% {
     background: #f16e00;
   }
+} */
+@keyframes gradientMove {
+  0% {
+    background: linear-gradient(to right, #ffa500, #f16e00);
+  }
+  100% {
+    background: linear-gradient(to right, #f16e00, #ffa500);
+  }
 }
+
+body {
+  animation: gradientMove 1s infinite;
+  -webkit-animation: gradientMove 1s infinite;
+}
+
 table {
   border-spacing: 0;
   background: #fff;
 }
 thead {
-  background-color: #f16e00;
+  background-color: #ff8c00;
 }
 td {
   border-bottom: 3px solid black;
   padding: 0.5rem 0.25rem;
+}
+
+#myTable tr.header,
+#myTable tbody tr:hover {
+  background-color: #ffc0cb;
 }

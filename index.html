@@ -5,35 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="images/Orange Logo.png"
+      type="image/x-icon"
+    />
+    <title>Orange 250</title>
   </head>
-  <body class="pt-5">
-    <header class="text-center text-light">
-      <h1>Welcome to 250 <br />Verfication Guide</h1>
+  <body>
+    <header>
+      <nav class="bg-black d-flex justify-content-between">
+        <picture>
+          <img
+            width="150px"
+            height="100px"
+            src="images/Orange Logo.png"
+            alt="Logo"
+          />
+        </picture>
+        <p class="text-light d-flex align-items-end pe-3">
+          Made By Zeka & TL.Samer & S.Shady Mohy
+        </p>
+      </nav>
+      <h1 class="text-center text-light py-5">
+        Welcome to 250 👋<br />Verification Guide
+      </h1>
     </header>
     <main>
-      <form class="form-inline d-flex justify-content-around mx-2">
+      <form
+        class="form-inline d-flex justify-content-around mx-2 mb-3 position-sticky"
+      >
         <input
           class="form-control mr-sm-2 my-2 d-inline"
           type="search"
+          id="myInput"
+          onkeyup="myFunction()"
           placeholder="Search By Request"
           aria-label="Search"
+          onkeyup="performSearch()"
+          id="searchInput"
         />
-        <button class="btn btn-outline-success my-2 ms-2 w-25" type="submit">
-          Search
-        </button>
       </form>
-      <table>
-        <thead>
+      <table id="myTable" class="text-center">
+        <thead class="position-sticky top-0">
           <tr>
-            <td>Request</td>
-            <td>Shop</td>
-            <td>sales</td>
-            <td>E-mail</td>
-            <td>Phone prov (Password )</td>
-            <td>CP's personal Data (Name &amp; ID for CP )</td>
-            <td>Co's name / user's data(Company Name )</td>
-            <td>More Details &amp; service request</td>
+            <th>Request</th>
+            <th>Shop</th>
+            <th>sales</th>
+            <th>E-mail</th>
+            <th>Phone prov (Password )</th>
+            <th>CP's personal Data (Name &amp; ID for CP )</th>
+            <th>Co's name / user's data(Company Name )</th>
+            <th>More Details &amp; service request</th>
           </tr>
         </thead>
         <tbody>
@@ -2225,7 +2248,6 @@
         </tbody>
       </table>
     </main>
-    <script src="javascript/bootstrap.bundle.min.js"></script>
     <script src="javascript/main.js"></script>
   </body>
 </html>
