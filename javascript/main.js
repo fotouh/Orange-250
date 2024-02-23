@@ -2,6 +2,7 @@ let x = document.querySelectorAll("td");
 for (let i = 0; i < x.length; i++) {
   if (x[i].innerText === "Yes") {
     x[i].style.backgroundColor = "#198754";
+    x[i].style.color = "#fff";
   }
 }
 
