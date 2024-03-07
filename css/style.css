@@ -1,34 +1,29 @@
+body,
+thead {
+  background-color: #ff8c00;
+}
+a,
+td,
+th {
+  padding: 0.5rem;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
-  background-color: #ff8c00;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-table {
-  border-spacing: 0;
-  background: #fff;
-  border-collapse: collapse;
-}
-
 thead {
-  background-color: #ff8c00;
   text-transform: capitalize;
 }
-
 td {
-  border-bottom: 3px solid black;
-
-  padding: 0.25rem 0.5rem;
+  border-bottom: 3px solid #000;
 }
-
-#myTable tr.header,
-#myTable tbody tr:hover {
+#myTable tbody tr:hover,
+#myTable tr.header {
   background-color: #ccc;
 }
 li {
@@ -36,25 +31,21 @@ li {
 }
 a {
   text-decoration: none;
-  background-color: aliceblue;
-  color: black;
+  background-color: #f0f8ff;
+  color: #000;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  padding: 0.5rem;
   margin-right: 0.5rem;
 }
-li:hover a {
-  background-color: black;
-  color: whITE;
-}
+li:hover a,
 thead tr {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
-td,
-th {
-  padding: 0.5rem;
+p a {
+  border: 0;
+  background: 0 0;
 }
